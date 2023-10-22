@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE129A4F-7C7A-4B34-8168-2DB1DA329A5E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DBMIDPROJECT</RootNamespace>
+    <AssemblyName>DBMIDPROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>itextsharp.pdfa\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circled-menu-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circled-menu-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circled-menu-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-course-assign-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-course-assign-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-course-assign-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-course-assign-601.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-center-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-center-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-top-menu-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\south-african-rand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\south-african-rand %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-todo-list-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-todo-list-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-stairs-up-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-stairs-up-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exam-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exam-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-quiz-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-quiz-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attendance %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attendance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-male-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-male-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-layout-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dashboard-layout-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-course-assign-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-classroom-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-classroom-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-classroom-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-course-assign-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-course-assign-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-course-assign-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-students-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-students-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-registration-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-todo-list-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-todo-list-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-stairs-up-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-todo-list-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-stairs-up-901.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page %281%291.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-1--unscreen.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
